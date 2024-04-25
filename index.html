@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weekly downloads Chart</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+  </head>
+  <body>
+    <div class="controls">
+	<fieldset>
+		<legend>Toggle color scheme</legend>
+		<ul class="controls-list">
+			<li>
+				<input type="radio" name="color scheme" value="purple" id="c-purple" checked>
+				<label for="c-purple">Purple</label>
+			</li>
+			<li>
+				<input type="radio" name="color scheme" value="red" id="c-red">
+				<label for="c-red">Red</label>
+			</li>
+			<li>
+				<input type="radio" name="color scheme" value="blue" id="c-blue">
+				<label for="c-blue">Green</label>
+			</li>
+		</ul>
+	</fieldset>
+</div>
+<div class="chart-wrapper" data-wrapper>
+	<h3 data-heading>Weekly downloads</h3>
+	<div class="chart-info">
+		<p data-total>200,000</p>
+	</div>
+	<figure data-chart></figure>
+</div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
